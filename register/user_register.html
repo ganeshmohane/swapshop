@@ -1,0 +1,123 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:#E3E6F3; 
+}  
+.container {  
+    padding: 50px;  
+  background-color:#E3E6F3;
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: white;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: lightcyan;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #121b12;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1>OPEN AN <u>USER</u> ACCOUNT</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />
+<lable>
+  PNR NO.
+</lable>
+<input type="text" name="PNR number" placeholder="Enter your PNR no." size="12"/required>
+<label>
+  DATE OF BIRTH :
+</label>
+<input type="date" required>
+<div>  
+<label>   
+Branch :  
+</label>   
+<select>  
+<option value="Course">Course</option>  
+<option value="BE-Data science">BE-DATA SCIENCE</option>  
+<option value="BE-Comps">BE-COMPS</option>  
+<option value="BE-Aiml">BE-AIML</option>  
+<option value="BE-Iot">BE-IOT</option>  
+<option value="BE-Extc">BE-EXTC</option>  
+<option value="Other">OTHER</option>  
+</select>  
+</div> 
+<div>  
+  <label>   
+  SEM :  
+  </label>   
+  <select>  
+  <option value="Semester">Semester</option>  
+  <option value="1">1</option>  
+  <option value="2">2</option>  
+  <option value="3">3</option>  
+  <option value="4">4</option>  
+  <option value="5">5</option>  
+  <option value="6">6</option>
+  <option value="7">7</option>  
+  <option value="8">8</option>  
+  </select>  
+  </div> 
+  <label>   
+    Roll NO :  
+    <input type="text" name="rollno" placeholder="Enter Roll NO." size="10"/ required>   </label>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   </label>
+
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>  
